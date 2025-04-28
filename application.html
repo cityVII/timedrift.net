@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to join Timedrift Collective.">
+  <title>Apply - Timedrift Collective</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">Timedrift Collective</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#application">How It Works</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="application.html" class="nav-apply">Apply</a>
+      </nav>
+      <div class="mobile-menu-icon" id="mobile-menu-toggle">&#9776;</div>
+    </div>
+    <div class="mobile-nav-links" id="mobile-nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#application">How It Works</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="application.html" class="nav-apply">Apply</a>
+    </div>
+  </header>
+
+  <!-- Application Form Section -->
+  <section id="application-form" class="content-section fade-in-section">
+    <div class="application-form-wrapper">
+
+      <div class="application-header">
+        <h2>Apply as a Creator</h2>
+        <a href="index.html" class="close-button">×</a>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="portfolio">Portfolio Link</label><br>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://your-portfolio.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="vision">What game do you dream of building?</label><br>
+          <textarea id="vision" name="vision" placeholder="Tell us about your vision..." rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+      </form>
+
+      <div style="margin-top: 2rem;">
+        <a href="index.html" class="btn-secondary">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="fade-in-section">
+    <p>© 2025 Timedrift Collective. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scroll-animations.js"></script>
+  <script src="mobile-menu.js"></script>
+
+</body>
+</html>
