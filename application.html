@@ -43,36 +43,30 @@
         <a href="index.html" class="close-button">×</a>
       </div>
 
-      <form action="https://formspree.io/f/mwpovrpn" method="POST">
-        <input type="hidden" name="_redirect" value="https://timedrift.net/thank-you.html">
+      <form action="https://formspree.io/f/mwpovrpn?redirect=https://timedrift.net/thank-you.html" method="POST">
 
         <!-- Section 0: Contact Information -->
         <div class="form-section">
           <h2 class="section-heading">Let's Connect</h2>
 
           <div class="form-group">
-            <label for="legal-name">Legal Name</label>
-            <input type="text" id="legal-name" name="legal-name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="preferred-name">Preferred Name (if different)</label>
-            <input type="text" id="preferred-name" name="preferred-name">
+            <label for="legal-name">Name</label>
+            <input type="text" id="legal-name" ... placeholder="Jane Doe">
           </div>
 
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" ... placeholder="janedoe@example.com">
           </div>
 
           <div class="form-group">
             <label for="portfolio">Portfolio / Main Online Profile</label>
-            <input type="url" id="portfolio" name="portfolio" required>
+            <input type="url" id="portfolio" ... placeholder="https://timedrift.net">
           </div>
 
           <div class="form-group">
             <label for="discord-handle">Discord Handle (Optional)</label>
-            <input type="text" id="discord-handle" name="discord-handle">
+            <input type="text" id="discord-handle" ... placeholder="janedev#1234">
           </div>
         </div>
 
@@ -82,30 +76,17 @@
 
           <div class="form-group">
             <label for="location">Location (City, Country)</label>
-            <input type="text" id="location" name="location">
+            <input type="text" id="location" ... placeholder="San Francisco, USA">
           </div>
 
           <div class="form-group">
             <label for="skills">Primary Skills (e.g., Programming, Art, Design)</label>
-            <input type="text" id="skills" name="skills">
+            <input type="text" id="skills" ... placeholder="Game Design, Product Management">
           </div>
 
           <div class="form-group">
             <label for="experience">Years of Active Game Development</label>
-            <select id="experience" name="experience">
-              <option>0–1 years</option>
-              <option>2–4 years</option>
-              <option>5–7 years</option>
-              <option>8+ years</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="shipped">Have You Shipped a Playable Project?</label>
-            <select id="shipped" name="shipped">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
+            <input type="text" id="skills" ... placeholder="1-2 years">
           </div>
         </div>
 
@@ -115,71 +96,41 @@
 
           <div class="form-group">
             <label for="work-style-description">Explain how you use your skills — including any AI tools — to accelerate your solo development process. (2–4 sentences)</label>
-            <textarea id="work-style-description" name="work-style-description" rows="5" required></textarea>
+            <textarea id="work-style-description" ... placeholder="Here's how I like to work on projects..."></textarea>
           </div>
-        </div>
-
-        <!-- Section 3: Motivation and Goals -->
-        <div class="form-section">
-          <h2 class="section-heading">Motivation and Goals</h2>
 
           <div class="form-group">
             <label for="why-games">Why do you make games?</label>
-            <textarea id="why-games" name="why-games" rows="4" required></textarea>
+            <textarea id="why-games" ... placeholder="Here's why I like working on games..."></textarea>
           </div>
 
           <div class="form-group">
-            <label for="goals">What are your personal goals for the next 1–2 years?</label>
-            <textarea id="goals" name="goals" rows="4" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="success">What does success look like for you in your next project?</label>
-            <textarea id="success" name="success" rows="4" required></textarea>
+            <label for="success">What does success look like for you in your next project and how does this differ from past projects?</label>
+            <textarea id="success" ... placeholder="Here's what I think success is..."></textarea>
           </div>
         </div>
 
-        <!-- Section 4: Project Proposal -->
+        <!-- Section 3: Project Proposal -->
         <div class="form-section">
           <h2 class="section-heading">Project Proposal</h2>
 
           <div class="form-group">
-            <label for="project-summary">Describe the project you would be most excited to build with Timedrift.</label>
+            <label for="project-summary">Give us your elevator pitch for a game you want to make.</label>
             <textarea id="project-summary" name="project-summary" rows="4" required></textarea>
           </div>
 
           <div class="form-group">
-            <label for="core-loop">What is the core gameplay loop or mechanic?</label>
+            <label for="core-loop">What is the core gameplay loop or mechanic? Is this present in another existing game?</label>
             <textarea id="core-loop" name="core-loop" rows="3" required></textarea>
           </div>
 
           <div class="form-group">
-            <label for="genre">What genre(s) best describe your project?</label>
-            <input type="text" id="genre" name="genre" required>
-          </div>
-
-          <div class="form-group">
-            <label for="art-style">How would you describe the envisioned art style or tone?</label>
-            <input type="text" id="art-style" name="art-style" required>
-          </div>
-
-          <div class="form-group">
-            <label for="tools">What tools and technologies would you plan to use?</label>
-            <input type="text" id="tools" name="tools" required>
-          </div>
-
-          <div class="form-group">
-            <label for="unique-selling">What’s the unique selling point of this project?</label>
+            <label for="unique-selling">What’s the unique selling point of this project? Who do you think will play this?</label>
             <textarea id="unique-selling" name="unique-selling" rows="3" required></textarea>
           </div>
 
           <div class="form-group">
-            <label for="inspirations">What existing games, media, or ideas inspire this project?</label>
-            <textarea id="inspirations" name="inspirations" rows="3" required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="personal-excitement">Why are you personally excited about this idea?</label>
+            <label for="personal-excitement">Why is this going to be successful in the current game market?</label>
             <textarea id="personal-excitement" name="personal-excitement" rows="3" required></textarea>
           </div>
 
@@ -189,7 +140,7 @@
           </div>
         </div>
 
-        <!-- Section 5: Anything Else -->
+        <!-- Section 4: Anything Else -->
         <div class="form-section">
           <h2 class="section-heading">Anything Else?</h2>
 
